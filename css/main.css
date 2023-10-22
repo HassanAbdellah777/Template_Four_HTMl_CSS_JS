@@ -1033,8 +1033,7 @@ span.control-btn::before {
 @media (width<768px) {
   .courses-wrapper {
     grid-template-columns: minmax(200px, 1fr);
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 0 20px 20px;
   }
 }
 .course-box {
@@ -1044,24 +1043,39 @@ span.control-btn::before {
   position: absolute;
   top: 20px;
   left: 20px;
-  width: 70px;
+  width: 50px;
   border-radius: 50%;
   border: 1px solid white;
+}
+.course-box {
+  display: flex;
+  flex-direction: column;
 }
 .course-img {
   width: 100%;
 }
+.course-details {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
 .course-details .course-txt {
+  border-bottom: 1px solid #e1e7e7;
+  position: relative;
   margin-bottom: 10px;
-  border-bottom: 1px solid #e7e7e7;
+  flex: 1;
 }
 .course-details .course-txt p {
-  line-height: 1.5;
+  line-height: 1.6;
+  margin-bottom: 30px;
 }
 .course-details .course-info {
   display: block;
   margin: 0 auto;
-  transform: translateY(50%);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
 }
 /* End Course page */
 
