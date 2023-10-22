@@ -1,0 +1,307 @@
+:root {
+  --blue-color: #0075ff;
+  --blue-alt-color: #0d69d5;
+  --orange-color: #f59e0b;
+  --green-color: #22c55e;
+  --red-color: #f44336;
+  --grey-color: #888;
+}
+/* Start Box Model  */
+.d-block {
+  display: block;
+}
+.d-flex {
+  display: flex;
+}
+.d-flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.align-center {
+  align-items: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-center {
+  justify-content: center;
+}
+.d-grid {
+  display: grid;
+}
+.gap-10 {
+  gap: 10px;
+}
+.gap-20 {
+  gap: 20px;
+}
+
+/* End Box Model */
+/* Start Padding , Margin */
+.p-10 {
+  padding: 10px;
+}
+.p-15 {
+  padding: 10px;
+}
+.p-20 {
+  padding: 20px;
+}
+.p-4-8 {
+  padding: 4px 8px;
+}
+.m-0 {
+  margin: 0;
+}
+.m-10 {
+  margin: 10px;
+}
+.m-20 {
+  margin: 20px;
+}
+.mt-0 {
+  margin-top: 0;
+}
+.mt-10 {
+  margin-top: 10px;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.mb-5 {
+  margin-bottom: 5px;
+}
+.mb-10 {
+  margin-bottom: 10px;
+}
+.mb-10 {
+  margin-bottom: 10px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+/* End Padding , Margin */
+/* Start Color */
+.c-black {
+  color: black;
+}
+.c-white {
+  color: white;
+}
+.c-grey {
+  color: var(--grey-color);
+}
+.c-red {
+  color: var(--red-color);
+}
+.c-green {
+  color: var(--green-color);
+}
+.c-blue {
+  color: var(--blue-color);
+}
+.c-orange {
+  color: var(--orange-color);
+}
+.bg-red {
+  background-color: var(--red-color);
+}
+.bg-green {
+  background-color: var(--green-color);
+}
+.bg-blue {
+  background-color: var(--blue-color);
+}
+.bg-orange {
+  background-color: var(--orange-color);
+}
+
+.bg-white {
+  background-color: white;
+}
+.bg-eee {
+  background-color: #eee;
+}
+.pointer-blue {
+  border-bottom-color: var(--blue-color);
+}
+.pointer-green {
+  border-bottom-color: var(--green-color);
+}
+.pointer-orange {
+  border-bottom-color: var(--orange-color);
+}
+/* End Color */
+/* Start Position */
+.p-relative {
+  position: relative;
+}
+/* End Position */
+/* Start Index */
+.z-index-1 {
+  z-index: 1;
+}
+/* End Index */
+/* start font  */
+.txt-c {
+  text-align: center;
+}
+@media (width<768px) {
+  .txt-c-mob {
+    text-align: center;
+  }
+}
+.txt-lined {
+  text-decoration: line-through;
+}
+.fs-14 {
+  font-size: 14px;
+}
+.fs-16 {
+  font-size: 14px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+.fs-20 {
+  font-size: 20px;
+}
+.fs-22 {
+  font-size: 22px;
+}
+.fs-24 {
+  font-size: 24px;
+}
+.fs-26 {
+  font-size: 26px;
+}
+.fs-28 {
+  font-size: 28px;
+}
+
+.f-bold {
+  font-weight: bold;
+}
+/* End Font */
+/* start Border */
+.rad-6 {
+  border-radius: 6px;
+}
+.rad-10 {
+  border-radius: 10px;
+}
+.border-ccc {
+  border: 1px solid #ccc;
+}
+.border-none {
+  border: none;
+}
+/* End Border */
+/* Start Width */
+.w-full {
+  width: 100%;
+}
+.w-ft {
+  width: fit-content;
+}
+/* End Width */
+/* Start Media  Hide Mobile*/
+@media (width<768px) {
+  .hide-mobile {
+    display: none;
+  }
+}
+/* End Media Hide Mobile */
+/* Start Component */
+.flex-between {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+.btn-shape {
+  display: block;
+  width: fit-content;
+  background-color: var(--blue-color);
+  color: white;
+  font-size: 14px;
+  border-radius: 6px;
+  padding: 4px 10px;
+  transition: 0.3s;
+  border: none;
+}
+.btn-shape:hover {
+  background-color: var(--blue-alt-color);
+}
+
+.overlay {
+  position: relative;
+}
+.overlay::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  opacity: 0.7;
+}
+.op-50 {
+  opacity: 0.4;
+}
+
+/*Start Control Button */
+.control-btn {
+  min-width: 70px;
+  border-radius: 100px;
+  cursor: pointer;
+  position: relative;
+  padding: 15px 0;
+  transition: 0.3s;
+}
+@media (width<768px) {
+  .control-btn {
+    min-width: 55px;
+  }
+}
+.control-btn.enable::before,
+.control-btn.disable::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  font-size: 22px;
+  color: white;
+  transform: translateY(-50%);
+  right: 5px;
+  transition: 0.3s;
+}
+.control-btn.enable::before {
+  content: "\f058";
+  transform: translateY(-50%);
+  right: 5px;
+}
+.control-btn.disable::before {
+  content: "\f057";
+  right: 100%;
+  transform: translate(calc(100% + 5px), -50%);
+}
+.control-btn.enable {
+  background-color: var(--blue-color);
+}
+.control-btn.disable {
+  background-color: #ccc;
+}
+/*End Control Button */
+
+/* End Component  */
+/* Start Media */
+@media (width<768px) {
+  .d-block-mob {
+    display: block;
+  }
+}
+/* End Media */
