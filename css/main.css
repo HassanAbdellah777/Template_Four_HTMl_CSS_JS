@@ -190,12 +190,16 @@ ul {
   grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
   margin-left: 20px;
   margin-right: 20px;
+  margin-bottom: 20px;
+  gap: 20px;
 }
 @media (width<768px) {
   .wrapper {
     grid-template-columns: minmax(200px, 1fr);
     margin-left: 10px;
     margin-right: 10px;
+    margin-bottom: 10px;
+    gap: 10px;
   }
 }
 /* Start Welcome Box */
@@ -648,6 +652,11 @@ ul {
 .table-section {
   margin: 20px;
 }
+@media (width<768px) {
+  .table-section {
+    margin: 10px;
+  }
+}
 .table-wrapper {
   overflow-x: scroll;
 }
@@ -838,6 +847,11 @@ table tbody tr:hover {
   /* to avoid corner border effection(for top and bottom) at hover */
   overflow: hidden;
 }
+@media (width<768px) {
+  .profile-data {
+    margin: 10px;
+  }
+}
 .profile-name {
   min-width: 250px;
   text-align: center;
@@ -896,13 +910,17 @@ span.control-btn {
 span.control-btn::before {
   font-size: 16px !important;
 }
-
+@media (width<768px) {
+  .skills-activity {
+    margin: 10px;
+  }
+}
 .profile-skills {
   flex-grow: 1;
 }
 @media (width<768px) {
   .profile-skills {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 }
 .profile-skills .my-skills {
@@ -946,13 +964,18 @@ span.control-btn::before {
 .projects-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-  margin: 0 20px 10px 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  gap: 20px;
 }
 @media (width<768px) {
   .projects-wrapper {
     grid-template-columns: minmax(200px, 1fr);
     margin-left: 10px;
     margin-right: 10px;
+    margin-bottom: 10px;
+    gap: 10px;
   }
 }
 .project-dashboard .project-date {
@@ -1032,7 +1055,9 @@ span.control-btn::before {
 @media (width<768px) {
   .courses-wrapper {
     grid-template-columns: minmax(200px, 1fr);
-    }
+    margin: 0 10px 10px;
+    gap: 10px;
+  }
 }
 .course-box {
   overflow: hidden;
@@ -1081,12 +1106,14 @@ span.control-btn::before {
 .friends-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  margin: 20px;
+  margin: 0 20px 20px;
   gap: 20px;
 }
 @media (width<768px) {
   .friends-wrapper {
     grid-template-columns: minmax(200px, 1fr);
+    margin: 0 10px 10px;
+    gap: 10px;
   }
 }
 
@@ -1158,6 +1185,9 @@ span.control-btn::before {
   .files-container {
     flex-direction: column-reverse;
     align-items: normal;
+
+    margin: 10px;
+    gap: 10px;
   }
 }
 .files-wrapper {
@@ -1168,6 +1198,7 @@ span.control-btn::before {
 @media (width<768px) {
   .files-wrapper {
     grid-template-columns: minmax(200px, 1fr);
+    gap: 10px;
   }
 }
 
@@ -1254,7 +1285,8 @@ span.control-btn::before {
 @media (width<768px) {
   .plans-wrapper {
     grid-template-columns: minmax(200px, 1fr);
-    margin: 20px;
+    margin: 10px;
+    gap: 10px;
   }
 }
 
